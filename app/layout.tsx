@@ -5,6 +5,8 @@ import "./globals.css"
 import { AuthProvider } from "@/lib/auth"
 import { I18nProvider } from "@/lib/i18n"
 import { ErrorBoundary } from "@/components/ui/error-boundary"
+export default function RootLayout({ children }: { children: React.ReactNode }) 
+import ClientLayout from './ClientLayout';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -91,6 +93,7 @@ export default function RootLayout({
         <ErrorBoundary>
           <I18nProvider>
             <AuthProvider>{children}</AuthProvider>
+            <ClientLayout>{children}</ClientLayout>
           </I18nProvider>
         </ErrorBoundary>
       </body>
