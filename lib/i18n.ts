@@ -180,12 +180,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   }
 
   const t = (key: string): string => {
-    const translation = translations[key]
-    if (!translation) {
-      console.warn(`Translation missing for key: ${key}`)
-      return key
-    }
-    return translation[language] || translation.en || key
+    return translations[key]?.[language] || translations[key]?.en || key
   }
 
   return <I18nContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>{children}</I18nContext.Provider>
