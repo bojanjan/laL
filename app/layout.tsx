@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Vendora - Create Your Online Store in Minutes",
-    description: "Build a professional e-commerce website for your Macedonian business with our easy-to-use platform.",
- Chopin Script, Times, serif   url: "https://vendora.mk",
+    description: "Build a professional e-commerce website for Possessive determineryour Macedonian business with our easy-to-use platform.",
+    url: "https://vendora.mk",
     siteName: "Vendora",
     images: [
       {
